@@ -1,3 +1,107 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+
+:root {
+  /* font family */
+  --primary-font-family: "Montserrat", sans-serif;
+  /* font size */
+  --one-px: 0.06rem;
+  --two-px: 0.13rem;
+  --three-px: 0.19rem;
+  --four-px: 0.3rem;
+  --five-px: 0.3rem;
+  --six-px: 0.4rem;
+  --eight-px: 0.5rem;
+  --ten-px: 0.6rem;
+  /* 12 */
+  --twelve-px: 0.8rem;
+  /* 14 */
+  --forteen-px: 0.9rem;
+  /* 15 */
+  --fifteen-px: 0.9rem;
+  /* 16 */
+  --sixteen-px: 1rem;
+  /* 18 */
+  --eighteen-px: 1.1rem;
+  /* 20 */
+  --twenty-px: 1.3rem;
+  /* 22 */
+  --twenty-two-px: 1.375rem;
+  /* 24 */
+  --twenty-four-px: 1.5rem;
+  /* 25 */
+  --twenty-five-px: 1.6rem;
+  /* 26 */
+  --twenty-six-px: 1.625rem;
+  /* 28 */
+  --twenty-eight-px: 1.8rem;
+  /* 30 */
+  --thirty-px: 1.875rem;
+  /* 32 */
+  --thirty-two-px: 2rem;
+  /* 36 */
+  --thirty-six-px: 2rem;
+  /* 40 */
+  --forty-px: 3rem;
+  /* 44 */
+  --forty-four-px: 3rem;
+  /* 48 */
+  --forty-eight-px: 3rem;
+  /* 50 */
+  --fifty-px: 3rem;
+  /* 54 */
+  --fifty-four-px: 3.375rem;
+  /* 56 */
+  --fifty-six-px: 4rem;
+  /* 60 */
+  --sixty-px: 3.75rem;
+  /* 64 */
+  --sixty-four-px: 4rem;
+  /* 70 */
+  --seventy-px: 4.375rem;
+  /* 72 */
+  --seventy-two-px: 5rem;
+  /* 75 */
+  --sevety-five-px: 5rem;
+  /* 80 */
+  --eighty-px: 5rem;
+  /* 90 */
+  --ninty-px: 6rem;
+  /* 100 */
+  --hundred-px: 6rem;
+
+  /* colors */
+  --dark-black: #0c0f1d;
+  --black: #1e1e2d;
+  --black-two: #181b2c;
+  --black-mix: #131729;
+  --dark-grey: #747689;
+  --grey-mix: #7578a6;
+  --grey: #203135;
+  --liht-grey: #9494a5;
+  --blue-mix: #7b66ff;
+  --blue-mix-two: #232c63;
+  --blue: #303ef7;
+  --green: #13bc69;
+  --light-red: #f66c6a;
+
+  /* font-weight */
+  --extra-bold: 800;
+  --bold: 700;
+  --semi-bold: 600;
+  --medium: 500;
+  --normal: 400;
+  --thin: 300;
+}
