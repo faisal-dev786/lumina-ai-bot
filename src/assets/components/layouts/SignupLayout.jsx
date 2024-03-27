@@ -7,7 +7,7 @@ const SignupLayout = ({ children }) => {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h1 className="primary-heading md:leading-[70.4px] leading-[2.25rem]">
-              Create an Albot that serves your sales teams and your customer
+              Create an Ai bot that serves your sales teams and your customer
               support{" "}
             </h1>
             <p className="secondary-para my-3 md:my-9">

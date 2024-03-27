@@ -9,7 +9,7 @@ const Signup = () => {
       <SignupLayout>
         <form action="">
           <div className="bg-[#F9F9FF] p-8 rounded-2xl">
-            <h2 className="secondary-heading mb-8">Acc ount creation</h2>
+            <h2 className="secondary-heading mb-8">Account creation</h2>
             <div className="relative mb-8">
               <p
                 style={{
