@@ -1,6 +1,8 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +12,6 @@
 img {
   max-width: 100%;
 }
-
-@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
 
 :root {
   /* font family */
@@ -90,12 +90,16 @@ img {
   --dark-grey: #747689;
   --grey-mix: #7578a6;
   --grey: #203135;
-  --liht-grey: #9494a5;
+  --grey-two: #9a9a9a;
+  --light-grey: #9494a5;
   --blue-mix: #7b66ff;
   --blue-mix-two: #232c63;
   --blue: #303ef7;
+  -dark-blue: #2b65ff;
+  --blue-two: #545e8a;
   --green: #13bc69;
   --light-red: #f66c6a;
+  --white: #ffffff;
 
   /* font-weight */
   --extra-bold: 800;
@@ -104,4 +108,205 @@ img {
   --medium: 500;
   --normal: 400;
   --thin: 300;
+}
+.primary-heading {
+  font-family: var(--primary-font-family);
+  /* 64px */
+  font-size: var(--sixty-four-px);
+  /* #0C0F1D */
+  color: var(--dark-black);
+  font-weight: var(--extra-bold);
+}
+.secondary-heading {
+  font-family: var(--primary-font-family);
+  /* 20px */
+  font-size: var(--twenty-px);
+  /* #1E1E2D */
+  color: var(--black);
+  font-weight: var(--extra-bold);
+}
+.tertiary-heading {
+  font-family: var(--primary-font-family);
+  /* 28px */
+  font-size: var(--twenty-eight-px);
+  /* #1E1E2D */
+  color: var(--black);
+  font-weight: var(--semi-bold);
+}
+.quaternary-heading {
+  font-family: var(--primary-font-family);
+  /* 26px */
+  font-size: var(--twenty-six-px);
+  /* ##0C0F1D */
+  color: var(--dark-black);
+  font-weight: var(--extra-bold);
+}
+.penta-heading {
+  font-family: var(--primary-font-family);
+  /* 22px */
+  font-size: var(--twenty-two-px);
+  /* #1E1E2D */
+  color: var(--black);
+  font-weight: var(--semi-bold);
+}
+.hexa-heading {
+  font-family: var(--primary-font-family);
+  /* 30px */
+  font-size: var(--thirty-px);
+  /* #232C63 */
+  color: var(--blue-mix-two);
+  font-weight: var(--bold);
+}
+.hepta-heading {
+  font-family: var(--primary-font-family);
+  /* 32px */
+  font-size: var(--thirty-two-px);
+  /* #1E1E2D */
+  color: var(--black);
+  font-weight: var(--semi-bold);
+}
+
+.primary-para {
+  font-family: var(--primary-font-family);
+  /* 18px */
+  font-size: var(--eighteen-px);
+  /* #0C0F1D*/
+  color: var(--dark-black);
+  font-weight: var(--normal);
+}
+.secondary-para {
+  font-family: var(--primary-font-family);
+  /* 28px */
+  font-size: var(--twenty-eight-px);
+  /* #747689*/
+  color: var(--dark-grey);
+  font-weight: var(--normal);
+}
+.tertiary-para {
+  font-family: var(--primary-font-family);
+  /* 14px */
+  font-size: var(--forteen-px);
+  /* #9494A5 */
+  color: var(--light-grey);
+  font-weight: var(--normal);
+}
+.tertiary-para2 {
+  font-family: var(--primary-font-family);
+  /* 14px */
+  font-size: var(--forteen-px);
+  /* #2B65FF */
+  color: var(--dark-blue);
+  font-weight: var(--normal);
+}
+.quaternary-para {
+  font-family: var(--primary-font-family);
+  /* 18px */
+  font-size: var(--eighteen-px);
+  /* #203135 */
+  color: var(--grey);
+  font-weight: var(--normal);
+}
+.penta-para {
+  font-family: var(--primary-font-family);
+  /* 18px */
+  font-size: var(--eighteen-px);
+  /* #9A9A9A */
+  color: var(--grey-two);
+  font-weight: var(--thin);
+}
+.hexa-para {
+  font-family: var(--primary-font-family);
+  /* 18px */
+  font-size: var(--eighteen-px);
+  /* #747689 */
+  color: var(--dark-grey);
+  font-weight: var(--normal);
+}
+.hepta-para {
+  font-family: var(--primary-font-family);
+  /* 20 px */
+  font-size: var(--twenty-px);
+  /* #F66C6A */
+  color: var(--light-red);
+  font-weight: var(--normal);
+}
+.hepta-para2 {
+  font-family: var(--primary-font-family);
+  /* 20 px */
+  font-size: var(--twenty-px);
+  /* #545E8A */
+  color: var(--blue-two);
+  font-weight: var(--thin);
+}
+.hepta-para3 {
+  font-family: var(--primary-font-family);
+  /* 20 px */
+  font-size: var(--twenty-px);
+  /* #181B2C */
+  color: var(--black-two);
+  font-weight: var(--bold);
+}
+.hepta-para4 {
+  font-family: var(--primary-font-family);
+  /* 20 px */
+  font-size: var(--twenty-px);
+  /* #232C63 */
+  color: var(--blue-mix-two);
+  font-weight: var(--normal);
+}
+.octa-para {
+  font-family: var(--primary-font-family);
+  /* 16 px */
+  font-size: var(--sixteen-px);
+  /* #FFFFFF */
+  color: var(--white);
+  font-weight: var(--semi-bold);
+}
+.nona-para {
+  font-family: var(--primary-font-family);
+  /* 18 px */
+  font-size: var(--eighteen-px);
+  /* #FFFFFF */
+  color: var(--white);
+  font-weight: var(--normal);
+}
+.nona-para2 {
+  font-family: var(--primary-font-family);
+  /* 18 px */
+  font-size: var(--eighteen-px);
+  /* #7578A6 */
+  color: var(--grey-mix);
+  font-weight: var(--normal);
+}
+.nona-para3 {
+  font-family: var(--primary-font-family);
+  /* 16 px */
+  font-size: var(--sixteen-px);
+  /* #7578A6 */
+  color: var(--grey-mix);
+  font-weight: var(--normal);
+}
+.nona-para4 {
+  font-family: var(--primary-font-family);
+  /* 16 px */
+  font-size: var(--sixteen-px);
+  /* #1E1E2D */
+  color: var(--black);
+  font-weight: var(--medium);
+}
+.nona-para5 {
+  font-family: var(--primary-font-family);
+  /* 16 px */
+  font-size: var(--sixteen-px);
+  /* #7578A6 */
+  color: var(--grey-mix);
+  font-weight: var(--medium);
+}
+.deca-para {
+  font-family: var(--primary-font-family);
+  /* 18 px */
+  font-size: var(--eighteen-px);
+  /* #1E1E2D */
+  color: var(--black);
+  font-weight: var(--medium);
 }
