@@ -6,4 +6,4 @@ services:
     build: .
     # Map port 3000 on the container to port 3000 on the host
     ports:
-      - "3000:80"
+      - "3001:80"
