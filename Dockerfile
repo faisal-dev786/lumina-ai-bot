@@ -1,44 +1,14 @@
-# Use Node.js 20.x as the base image
 FROM node:20-alpine as build
 
-# Set the working directory inside the container
 WORKDIR /app
+COPY . /app
 
-# Copy package.json and yarn.lock to the working directory
-COPY package.json yarn.lock ./
+RUN npm install
+RUN npm run build
 
-# Install project dependencies
-RUN yarn install --frozen-lockfile
-
-# Debugging: List contents of the current directory
-RUN ls -l .
-
-# Copy the project files to the working directory
-COPY . .
-
-# Debugging: List contents of the copied directory
-RUN ls -l .
-
-# Build the React app
-RUN yarn build
-
-# Stage 2: Serve the React app with a lightweight HTTP server
-FROM nginx:alpine
-
-# Set the working directory for NGINX
-WORKDIR /usr/share/nginx/html
-
-# Debugging: List contents of the current directory
-RUN ls -l /app
-
-# Debugging: List contents of the /app/build directory
-RUN ls -l /app/build
-
-# Copy the built app from the build stage to the nginx web server directory
-COPY --from=build /app/build .
-
-# Expose port 80
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install nginx -y
+COPY --from=build /app/dist /var/www/html/
 EXPOSE 80
-
-# Start nginx server
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx","-g","daemon off;"]
