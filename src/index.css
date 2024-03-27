@@ -14,7 +14,7 @@ img {
 }
 .page-width {
   max-width: 1400px;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 :root {
@@ -115,8 +115,8 @@ img {
 }
 .primary-heading {
   font-family: var(--primary-font-family);
-  /* 64px */
-  font-size: var(--sixty-four-px);
+  /* 59px */
+  font-size: 3.438rem !important;
   /* #0C0F1D */
   color: var(--dark-black);
   font-weight: var(--extra-bold);
@@ -313,4 +313,10 @@ img {
   /* #1E1E2D */
   color: var(--black);
   font-weight: var(--medium);
+}
+
+@media all and (max-width: 768px) {
+  .primary-heading {
+    font-size: 2rem !important;
+  }
 }
