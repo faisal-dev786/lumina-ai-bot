@@ -1,4 +1,4 @@
-# Use Node.js 14 LTS as the base image
+# Use Node.js 20.x as the base image
 FROM node:20-alpine as build
 
 # Set the working directory inside the container
@@ -19,8 +19,11 @@ RUN yarn build
 # Stage 2: Serve the React app with a lightweight HTTP server
 FROM nginx:alpine
 
+# Set the working directory for NGINX
+WORKDIR /usr/share/nginx/html
+
 # Copy the built app from the build stage to the nginx web server directory
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/build .
 
 # Expose port 80
 EXPOSE 80
