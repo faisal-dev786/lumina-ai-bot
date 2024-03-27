@@ -12,7 +12,11 @@
 img {
   max-width: 100%;
 }
-
+.page-width {
+  max-width: 1400px;
+  width: 90%;
+  margin: auto;
+}
 :root {
   /* font family */
   --primary-font-family: "Montserrat", sans-serif;
