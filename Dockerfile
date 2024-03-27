@@ -22,11 +22,15 @@ FROM nginx:alpine
 # Set the working directory for NGINX
 WORKDIR /usr/share/nginx/html
 
-# Debugging: List contents of /app/build directory
+# Debugging: List contents of the current directory
+RUN ls -l /app
+
+# Debugging: List contents of the /app/build directory
 RUN ls -l /app/build
 
 # Copy the built app from the build stage to the nginx web server directory
 COPY --from=build /app/build .
+
 # Expose port 80
 EXPOSE 80
 
