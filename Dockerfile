@@ -10,8 +10,14 @@ COPY package.json yarn.lock ./
 # Install project dependencies
 RUN yarn install --frozen-lockfile
 
+# Debugging: List contents of the current directory
+RUN ls -l .
+
 # Copy the project files to the working directory
 COPY . .
+
+# Debugging: List contents of the copied directory
+RUN ls -l .
 
 # Build the React app
 RUN yarn build
